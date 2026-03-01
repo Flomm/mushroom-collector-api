@@ -5,7 +5,7 @@ const databaseConnection = mysql.createPool({
   host: config.mysql.host,
   user: config.mysql.user,
   password: config.mysql.password,
-  database: config.mysql.database,
+  database: config.mysql.database
 });
 
 export const db = {
@@ -33,5 +33,5 @@ export const db = {
         resolve(JSON.parse(JSON.stringify(result)));
       });
     });
-  },
+  }
 };

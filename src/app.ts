@@ -8,6 +8,7 @@ const app = express();
 const swaggerDocs = swaggerJSDoc(config.swaggerOptions);
 
 app.use('/api', apiRouter);
+
 app.use('/swagger', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 export default app;
