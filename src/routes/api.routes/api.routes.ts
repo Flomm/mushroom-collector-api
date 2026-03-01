@@ -6,3 +6,7 @@ apiRouter.use(cors());
 apiRouter.use(express.json());
 
 export default apiRouter;
+
+const test = () => 0;
+
+test();
